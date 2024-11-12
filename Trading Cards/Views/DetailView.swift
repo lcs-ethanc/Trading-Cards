@@ -47,12 +47,12 @@ struct ExtractedView: View {
     let abilityOne: String
     let abilityTwo: String
     var body: some View {
-            Text("Kid Goku")
+        Text("\(cardName)")
                 .font(.system(size: 50))
                 .fontWeight(.bold)
                 .padding(.bottom,0.5)
                 .padding(.trailing, 125)
-            Image("kidGoku2")
+        Image("\(image)")
                 .resizable()
                 .frame(width: 300,height: 300)
                 .padding(10)
@@ -72,18 +72,18 @@ struct ExtractedView: View {
             
             HStack{
                 VStack(alignment: .leading){
-                    Text("Power: 10")
-                    Text("Health: 20")
+                    Text("Power: \(power)")
+                    Text("Health: \(health)")
                 }
                 .padding(.trailing,10)
                 VStack(alignment: .leading){
-                    Text("Speed: 9")
-                    Text("Ki: 7")
+                    Text("Speed: \(speed)")
+                    Text("Ki: \(ki)")
                 }
                 .padding(.trailing,10)
                 VStack(alignment: .leading){
-                    Text("Endurance: 12")
-                    Text("Battle IQ: 15")
+                    Text("Endurance: \(endurance)")
+                    Text("Battle IQ: \(battleIQ)")
                 }
             }
             .fontWeight(.bold)
@@ -100,14 +100,14 @@ struct ExtractedView: View {
             
             HStack{
                 VStack(alignment: .leading){
-                    Text("Series: Dragon Ball")
-                    Text("Species: Saiyan")
+                    Text("Series: \(series)")
+                    Text("Species: \(species)")
                 }
                 
                 .padding(.trailing,10)
                 VStack(alignment: .leading){
-                    Text("School: Turtle School")
-                    Text("Power Level: 10-260")
+                    Text("School: \(school)")
+                    Text("Power Level: \(powerLevel)")
                 }
             }
             .padding(.bottom,1)
@@ -121,8 +121,8 @@ struct ExtractedView: View {
                     .padding(.bottom,1)
             }
             
-            Text("Kamehameha: A powerful energy wave")
-            Text("Power Pole: A magical staff that can extend to incredible lengths.")
+        Text("\(abilityOne)")
+            Text("\(abilityTwo)")
             
             
         }
